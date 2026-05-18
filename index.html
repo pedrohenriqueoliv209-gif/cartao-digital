@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartão Digital</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0b1120;
+    overflow:hidden;
+    color:white;
+}
+
+/* Fundo */
+
+.bg{
+    position:absolute;
+    width:400px;
+    height:400px;
+    background:#00bcd4;
+    filter:blur(120px);
+    opacity:.15;
+    border-radius:50%;
+    top:-100px;
+    right:-100px;
+}
+
+.bg2{
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:#7c3aed;
+    filter:blur(120px);
+    opacity:.15;
+    border-radius:50%;
+    bottom:-100px;
+    left:-100px;
+}
+
+/* Card */
+
+.card{
+    position:relative;
+    width:340px;
+    background:rgba(17,24,39,.75);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
+    padding:35px 28px;
+    text-align:center;
+    overflow:hidden;
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.4),
+    0 0 30px rgba(0,188,212,.08);
+}
+
+/* Decoração */
+
+.card::before{
+    content:'';
+    position:absolute;
+    width:120px;
+    height:120px;
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:50%;
+    top:-60px;
+    right:-60px;
+}
+
+/* Foto */
+
+.foto{
+    width:110px;
+    height:110px;
+    border-radius:25px;
+    margin:auto;
+    background:linear-gradient(135deg,#00bcd4,#7c3aed);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:38px;
+    font-weight:700;
+    margin-bottom:22px;
+    box-shadow:0 0 25px rgba(0,188,212,.35);
+}
+
+/* Nome */
+
+h1{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.tag{
+    color:#00bcd4;
+    font-size:13px;
+    letter-spacing:2px;
+    margin-bottom:18px;
+    display:block;
+}
+
+/* Texto */
+
+p{
+    color:#9ca3af;
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:28px;
+}
+
+/* Botões */
+
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    text-decoration:none;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.05);
+    color:white;
+    padding:15px 18px;
+    border-radius:16px;
+    margin-bottom:15px;
+    transition:.3s;
+    font-weight:500;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    background:linear-gradient(135deg,#00bcd4,#7c3aed);
+}
+
+/* Ícones */
+
+.icon{
+    width:35px;
+    height:35px;
+    border-radius:12px;
+    background:rgba(255,255,255,.08);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Rodapé */
+
+.social{
+    margin-top:25px;
+    color:#64748b;
+    font-size:13px;
+}
+
+/* Status */
+
+.status{
+    width:10px;
+    height:10px;
+    background:#22c55e;
+    border-radius:50%;
+    display:inline-block;
+    margin-right:6px;
+    box-shadow:0 0 10px #22c55e;
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="bg2"></div>
+
+<div class="card">
+
+    <div class="foto">
+        PS
+    </div>
+
+    <h1>Pedro Silva</h1>
+
+    <span class="tag">
+        DESENVOLVEDOR WEB
+    </span>
+
+    <p>
+        Desenvolvendo sites modernos,
+        rápidos e responsivos para lojas
+        e negócios digitais.
+    </p>
+
+    <!-- WhatsApp -->
+
+    <a href="https://wa.me/5511987794478?text=Olá,%20vim%20pelo%20seu%20site"
+    target="_blank"
+    class="btn">
+
+        WhatsApp
+
+        <div class="icon">
+            →
+        </div>
+
+    </a>
+
+    <!-- Projeto 1 -->
+
+    <a href="https://pedrohenriqueoliv209-gif.github.io/autopecasideal/"
+    target="_blank"
+    class="btn">
+
+        Projeto Auto Peças
+
+        <div class="icon">
+            ⌁
+        </div>
+
+    </a>
+
+    <!-- Projeto 2 -->
+
+    <a href="https://pedrohenriqueoliv209-gif.github.io/granada-pais/"
+    target="_blank"
+    class="btn">
+
+        Projeto Granada
+
+        <div class="icon">
+            ⌁
+        </div>
+
+    </a>
+
+    <!-- GitHub -->
+
+    <a href="https://github.com/pedrohenriqueoliv209-gif"
+    target="_blank"
+    class="btn">
+
+        GitHub
+
+        <div class="icon">
+            &lt;/&gt;
+        </div>
+
+    </a>
+
+    <div class="social">
+        <span class="status"></span>
+        Disponível para projetos
+    </div>
+
+</div>
+
+</body>
+</html>
